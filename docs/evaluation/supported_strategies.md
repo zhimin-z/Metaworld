@@ -170,9 +170,9 @@ This document identifies which strategies from the Unified Evaluation Workflow a
 
 ## Summary
 
-Meta-World provides native support for **8 out of 40** strategies in the Unified Evaluation Workflow:
+Meta-World provides native support for **9 strategies** in the Unified Evaluation Workflow:
 
-**Supported (8):**
+**Supported:**
 1. Phase 0-A: Git Clone
 2. Phase 0-A: PyPI Packages
 3. Phase I-A: Policy/Agent Instantiation
@@ -181,8 +181,6 @@ Meta-World provides native support for **8 out of 40** strategies in the Unified
 6. Phase II-A: Batch Inference
 7. Phase II-A: Interactive Loop
 8. Phase III-A: Deterministic Measurement
-9. Phase III-B: Score Aggregation (Note: This is counted as strategy #1 under Phase III-B)
-
-**Total: 9 strategies supported**
+9. Phase III-B: Score Aggregation
 
 Meta-World is specifically designed as a simulated benchmark for reinforcement learning policy evaluation, focusing on robotic manipulation tasks. Its strengths lie in providing high-quality simulation environments, standardized evaluation protocols, and utilities for both multi-task and meta-learning evaluation scenarios.
