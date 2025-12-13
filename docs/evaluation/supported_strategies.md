@@ -26,7 +26,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
   ```bash
   pip install metaworld
   ```
-  Documentation: [README.md](../../README.md#installation)
+  Documentation: [README.md](../../README.md)
 
 **Unsupported Strategies:**
 
