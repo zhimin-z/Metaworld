@@ -37,6 +37,7 @@ next_obs, reward, terminate, truncate, info = env.step(a)
 
 introduction/basic_usage
 evaluation/evaluation
+evaluation/supported_strategies
 installation/installation
 rendering/rendering
 ```
