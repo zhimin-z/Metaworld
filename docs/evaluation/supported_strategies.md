@@ -32,7 +32,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
 
 - ❌ **Strategy 3: Node Package** - Not applicable (Python-based harness)
 - ❌ **Strategy 4: Binary Packages** - Not provided
-- ❌ **Strategy 5: Container Images** - While there is a docker directory in the repository, it contains outdated garage-related Docker configurations and does not provide Meta-World container images
+- ❌ **Strategy 5: Container Images** - While there is a docker directory in the repository, it contains legacy Docker configurations that are not maintained for Meta-World
 
 ### Step B: Service Authentication
 
@@ -50,7 +50,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
 
 - ✅ **Strategy 4: Policy/Agent Instantiation (Stateful Controllers)** - Meta-World is specifically designed for evaluating reinforcement learning policies and agents. Users instantiate their own trained policies/agents and evaluate them using Meta-World's environments and evaluation utilities.
   
-  Documentation: [Evaluation Guide](evaluation.md)
+  Documentation: [Evaluation Guide](./evaluation.md)
 
 **Unsupported Strategies:**
 
@@ -85,7 +85,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
   - Task-specific goal conditions
   - Expert policies for all 50 tasks that can serve as reference implementations
   
-  Documentation: [Evaluation Guide](evaluation.md), [Expert Trajectories](../benchmark/expert_trajectories.md)
+  Documentation: [Evaluation Guide](./evaluation.md), [Expert Trajectories](../benchmark/expert_trajectories.md)
 
 **Unsupported Strategies:**
 
@@ -102,14 +102,14 @@ This document identifies which strategies from the Unified Evaluation Workflow a
   - Asynchronous vector environments (`vector_strategy='async'`)
   - The `metaworld.evaluation.evaluation()` function evaluates policies across multiple episodes
   
-  Documentation: [Basic Usage](../introduction/basic_usage.md), [Evaluation Guide](evaluation.md)
+  Documentation: [Basic Usage](../introduction/basic_usage.md), [Evaluation Guide](./evaluation.md)
 
 - ✅ **Strategy 3: Interactive Loop** - Meta-World's core evaluation paradigm is interactive:
   - Policies interact with environments through state-action loops
   - Support for meta-learning with adaptation phases
   - The `metaworld.evaluation.metalearning_evaluation()` function implements iterative adaptation and evaluation
   
-  Documentation: [Evaluation Guide](evaluation.md)
+  Documentation: [Evaluation Guide](./evaluation.md)
 
 **Unsupported Strategies:**
 
@@ -129,7 +129,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
   
   All environments provide a success signal through `info['success']` which is deterministically computed based on task-specific completion criteria.
   
-  Documentation: [Evaluation Guide](evaluation.md), [Reward Functions](../benchmark/reward_functions.md)
+  Documentation: [Evaluation Guide](./evaluation.md), [Reward Functions](../benchmark/reward_functions.md)
 
 **Unsupported Strategies:**
 
@@ -149,7 +149,7 @@ This document identifies which strategies from the Unified Evaluation Workflow a
   
   The `evaluation()` and `metalearning_evaluation()` functions return these aggregate metrics.
   
-  Documentation: [Evaluation Guide](evaluation.md)
+  Documentation: [Evaluation Guide](./evaluation.md)
 
 **Unsupported Strategies:**
 
